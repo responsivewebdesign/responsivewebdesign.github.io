@@ -4,17 +4,41 @@
 <title>Fluid Width</title>
 <link href="style.css" rel="stylesheet" type="text/css"/>
 <style>
-.container{
-	padding: 0 15px;
-	background: #9CE6FF;
-	height: 1000px;
+/* Section 2 */
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+/* Section 3 */
+.maincontent{
+	width: 70%;
+	float: left;
+	background: #CCFF99;
+	height: 800px;
+}
+/* Section 4 */
+.sidebar{
+	width: 30%;
+	float: left;
+	background: #FFCC99;
+	height: 800px;
 }
 </style>
 </head>
 
 <body>
-<div class="container">
-	This container always fit the screen. A small padding is given on left and right for better reading experience.
+<!-- Section 1 -->	
+<div class="container clearfix">
+	<div class="maincontent">
+		<h2>Sample Content</h2>
+		Here I am placing some content inside main content area. Try this page from different screens. You will never see a horizontal scrolling.
+	</div>
+	<div class="sidebar">
+		Sidebar area
+	</div>
 </div>
 </body>
 
