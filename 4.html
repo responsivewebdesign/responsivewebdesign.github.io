@@ -11,16 +11,19 @@
     height: 0;
     visibility: hidden;
 }
+/* Section 2 */
 .container{
 	max-width: 960px;
 	margin: auto;
 	position: relative;
 }
+/* Section 3 */
 .maincontent{
 	margin-right: 300px;
 	background: #CCFF99;
 	height: 800px;
 }
+/* Section 4 */
 .sidebar{
 	width: 300px;
 	position: absolute;
@@ -33,13 +36,14 @@
 </head>
 
 <body>
+<!-- Section 1 -->
 <div class="container clearfix">
 	<div class="maincontent">
 		<h2>Sample Content</h2>
-		Here I am placing some content inside main content area. Try this page from different screens. You will never see a horizontal scrolling.
+		Here I am placing some content inside main content area. Try this page from different screens. Only the width of main content will change.
 	</div>
 	<div class="sidebar">
-		Sidebar area
+		This sidebar always maintains 300px width.
 	</div>
 </div>
 </body>
