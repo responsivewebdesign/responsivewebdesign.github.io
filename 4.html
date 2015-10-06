@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fluid Width with Fixed width Sidebar</title>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<style>
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.container{
+	max-width: 960px;
+	margin: auto;
+	position: relative;
+}
+.maincontent{
+	margin-right: 300px;
+	background: #CCFF99;
+	height: 800px;
+}
+.sidebar{
+	width: 300px;
+	position: absolute;
+	right:0;
+	top:0;
+	background: #FFCC99;
+	height: 800px;
+}
+</style>
+</head>
+
+<body>
+<div class="container clearfix">
+	<div class="maincontent">
+		<h2>Sample Content</h2>
+		Here I am placing some content inside main content area. Try this page from different screens. You will never see a horizontal scrolling.
+	</div>
+	<div class="sidebar">
+		Sidebar area
+	</div>
+</div>
+</body>
+
+</html>
